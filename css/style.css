@@ -6,8 +6,24 @@ body{
 	background:#28313a;
 	font-family: Arial, Helvetica, sans-serif;
 }
+ul {
+	text-align: right;
+}
+li{
+	display: inline;
+	padding-right: 10px;
+	font-size: large;
+}
+ul a {
+	text-decoration: none;
+	color: antiquewhite;
+}
+ul a:hover {
+	text-decoration: underline;
+}
 #hello{
-	color: antiquewhite
+	font-size: 100px;
+	color: antiquewhite;
 }
 .floating{
 	animation-name: floating;
