@@ -5,6 +5,9 @@ floating
 body{
 	background:#28313a;
 }
+#hello{
+	color: antiquewhite
+}
 .floating{
 	animation-name: floating;
 	-webkit-animation-name: floating;
