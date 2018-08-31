@@ -2,7 +2,9 @@
 floating
 ==============================================
 */
-
+body{
+	background:#28313a;
+}
 .floating{
 	animation-name: floating;
 	-webkit-animation-name: floating;
