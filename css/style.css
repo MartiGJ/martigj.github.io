@@ -29,3 +29,7 @@ ul a:hover {
 #name{
 	font-variant: small-caps;
 }
+#text{
+	font-size: 4vw;
+	letter-spacing: -0.1vw;
+}
