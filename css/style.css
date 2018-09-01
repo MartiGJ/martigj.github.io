@@ -3,7 +3,7 @@ floating
 ==============================================
 */
 body{
-	background:#28313a;
+	background:whitesmoke;
 	font-family: Arial, Helvetica, sans-serif;
 }
 ul {
@@ -16,14 +16,23 @@ li{
 }
 ul a {
 	text-decoration: none;
-	color: antiquewhite;
+	color: black;
 }
 ul a:hover {
-	text-decoration: underline;
+	border-bottom: 2px solid currentColor;
 }
 #hello{
 	font-size: 100px;
-	color: antiquewhite;
+	color: black;
+	margin: auto;
+	text-align: center;
+	letter-spacing: -5px;
+	position: relative;
+	top: 15pc;
+}
+#name{
+	font-variant: small-caps;
+	letter-spacing: 0px;
 }
 .floating{
 	animation-name: floating;
