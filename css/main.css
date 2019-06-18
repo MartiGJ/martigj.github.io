@@ -1,4 +1,8 @@
 
+* {
+  margin: 0;
+  padding: 0;
+}
 
 body{
   background-color: #1D1F21
@@ -12,8 +16,8 @@ main{
   grid-template-areas:
     'hi hi hi hi hi '
     'role role role portrait portrait '
-    'info info . portrait portrait'
-    'info info . portrait portrait'
+    'info info info portrait portrait'
+    'info info info portrait portrait'
     'links links links . .';
   grid-auto-columns: 1fr;
   color: #C5C8C6;
@@ -35,7 +39,8 @@ main{
 .info{
   /* background-color: rgba(56, 54, 38, 0.8); */
   grid-area: info;
-  margin: 0%
+  margin: 0%;
+  margin-right: 15%;
 }
 
 .text-secondary {
@@ -51,6 +56,10 @@ main{
   box-shadow: 12px 12px #c24f7b;
 }
 
+p{
+  margin: 3% 0%;
+}
+
 ul {
   font-size: 1em;
   font-weight: bold;
@@ -58,7 +67,6 @@ ul {
   /* background-color: rgba(30, 31, 44, 0.8); */
   display: table;
   white-space: nowrap;
-  margin: 0%
 }
 
 li {
@@ -161,13 +169,13 @@ a:focus::before, a:hover::before, a:focus::after, a:hover::after {
   }
   ul{
     bottom: 0;
-    margin-right: 5%
+    margin-left: 5%;
   }
 }
 
 @media only screen and (max-width:510px){
   .hi{
-    font-size: 2.5em;
+    font-size: 2.25em;
   }
   .role{
     font-size: 1.15em;
@@ -177,8 +185,10 @@ a:focus::before, a:hover::before, a:focus::after, a:hover::after {
   }
   ul{
     font-size: 0.85em;
+    margin-left: 0%;
   }
   .portrait{
-    margin-top: 40%;
+    margin-left: -5%;
+    margin-top: 50%;
   }
 }
