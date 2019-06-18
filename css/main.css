@@ -133,6 +133,7 @@ a:focus::before, a:hover::before, a:focus::after, a:hover::after {
   text-align: center;
   background: #282A2E;
   color: #C5C8C6;
+  padding: 1em;
 }
 
 @media only screen and (max-width:875px){
