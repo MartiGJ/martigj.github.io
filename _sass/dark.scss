@@ -11,5 +11,15 @@ $selection-background: rgba(197, 200, 198, 0.99) !default;
 $selection-text:       #1D1F21 !default;
 $background-color:     #1D1F21 !default;
 
-.header-title{font-size: 1em;}
+.blog-header {
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    left:0;
+    width: 100%;
+    text-align: center;
+    background: #282A2E;
+    color: #C5C8C6;
+    padding: 1em;
+  }
 @import "base";
