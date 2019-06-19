@@ -1,8 +1,16 @@
 {%- assign page_paths = site.header_pages | default: default_paths -%}
+
+
+{% if page.title == "Blog" %}
+<div>
+  <a href="./" data-text="About">About</a> / <span class="primary-text">Blog</span>
+</div>
+{% else %}
 <header>
   <div class="menu">
-    <ul class="header-title">
-      <span class="primary-text">//</span> {{page.title}}
+    <ul>
+      <a href="./blog" data-text="Blog">Blog</a> <span class="primary-text">//</span> {{page.title}}
     </ul>
   </div>
 </header>
+{% endif %}
