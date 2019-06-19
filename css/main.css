@@ -125,6 +125,7 @@ a:focus::before, a:hover::before, a:focus::after, a:hover::after {
 }
 
 .header {
+  font-size: 1.17em;
   z-index: 10;
   position: fixed;
   top: 0;
