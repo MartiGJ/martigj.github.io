@@ -79,6 +79,9 @@ li {
 a {
   text-decoration: none;
   color:inherit;
+}
+
+.ref-links{
   position: relative;
   padding: 16px 7px;
   border-top: 2px solid rgba(255,255,255,0);
@@ -86,13 +89,13 @@ a {
   transition: padding .3s,border-color .3s;
 }
 
-a:focus, a:hover {
+.ref-links:focus, .ref-links:hover {
   padding: 5px 7px;
   border-color: #c24f7b;
   outline: none;
 }
 
-a::before {
+.ref-links::before {
   position: absolute;
   top: 0;
   left: 0;
@@ -105,7 +108,7 @@ a::before {
   transition: max-height .3s,border-color 0s;
 }
 
-a::after {
+.ref-links::after {
   position: absolute;
   left: 0;
   bottom: 0;
@@ -118,7 +121,7 @@ a::after {
   transition: max-height .3s,border-color 0s;
 }
 
-a:focus::before, a:hover::before, a:focus::after, a:hover::after {
+.ref-links:focus::before, .ref-links:hover::before, .ref-links:focus::after, .ref-links:hover::after {
   max-height: 100%;
   transition-delay: .28s;
   border-color: #c24f7b;
