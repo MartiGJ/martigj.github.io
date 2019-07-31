@@ -1,39 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+---
+layout: default
+---
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/main.css">
-    <title>My Portfolio</title>
-</head>
+<div class="posts">
+  {% for post in site.posts %}
+    <article class="post">
 
-<body>
-  <div class="header">
-    <span class="text-secondary">About</span> / <a href="/blog" data-text="Blog">Blog</a>
-  </div>
-    <main>
-        <h1 class="hi">Hi, I'm Martí<span class="text-secondary">.</span></h1>
-        <h2 class="role">I'm a Programmer & Security Enthusiast<span class="text-secondary">.</span></h2>
-        <h3 class="info">
-          <p><span class="text-secondary">//</span> Based in Barcelona, Spain<span class="text-secondary">.</span></p>
-          <p><span class="text-secondary">//</span> Right now I'm interested in Reverse Engineering and Binary Exploitation<span class="text-secondary">.</span></p>
-        </h3>
-        <div class="portrait"></div>
-        <ul >
-            <li>
-              <a class="ref-links" href="https://github.com/MartiGJ/" data-text="GitHub">GitHub</a>
-            </li>
-            <li>
-              <a class="ref-links" href="https://twitter.com/0x4C44" data-text="Twitter">Twitter</a>
-            </li>
-            <li>
-              <a class="ref-links" href="https://www.linkedin.com/in/mart%C3%AD-guasch-jim%C3%A9nez-748493165/" data-text="LinkedIn">LinkedIn</a>
-            </li>
-        </ul>
-    </main>
-</body>
+      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
 
-</html>
+      <div class="entry">
+          {{ post.content | strip_html | truncatewords: 50 }}
+      </div>
+
+      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
+    </article>
+  {% endfor %}
+</div>
