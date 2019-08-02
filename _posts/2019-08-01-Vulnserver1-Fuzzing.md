@@ -52,6 +52,7 @@ We can see how it seems to be sending different data and after a while it stops 
 This is really nice since it means that we found a string that caused a crash but we have no clue what string it was so we can not reproduce it. To be able to obtain said string we have different methods, in my case, I'm going to run Vulnserver with Immunity Debugger to be able to check the state once the program crashes but you can also use Wireshark to analyze the packets send. We execute Immunity Debugger and open Vulnserver by pressing F3 and selecting it, we press F9 to continue execution, since it starts on a paussed state, and now we can fuzz it again and check the status once it crashes.
 
 ![]({{ site.baseurl }}/images/1/immunitydbg2.PNG)
+
 ![]({{ site.baseurl }}/images/1/immunitydbg3.PNG)
 
 In the screenshots we can see how the program crashed when trying to executed the instruction in the adress 41414141, which is **A** in hexadecimal, meaning we overwrote EIP with As. And if we look at the Registers window we can see how EAX is pointing at an ASCII string which is the command that caused the crash.
